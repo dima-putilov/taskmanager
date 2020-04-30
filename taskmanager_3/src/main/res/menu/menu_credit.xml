@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dmstaskmanager.maintask">
+    <item
+        android:id="@+id/action_credit_add"
+        android:orderInCategory="100"
+        android:title="@string/action_credit_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_credit_deleteAll"
+        android:orderInCategory="400"
+        android:title="@string/action_deleteAll"
+        app:showAsAction="never" />
+</menu>

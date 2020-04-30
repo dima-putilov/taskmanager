@@ -1,0 +1,71 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="graphic_parameters_width">100dp</dimen>
+
+    <dimen name="payment_summa_clear_button_width">40dp</dimen>
+
+
+    <dimen name="flat_settings_margin_start">20dp</dimen>
+    <dimen name="flat_settings_margin_end">20dp</dimen>
+
+    <dimen name="flat_margin_start">20dp</dimen>
+    <dimen name="flat_margin_end">20dp</dimen>
+
+  <dimen name="flat_item_margin_top">30dp</dimen>
+
+
+
+    <dimen name="flat_delimiter_height">1dp</dimen>
+    <dimen name="flat_delimiter_margin_top">20dp</dimen>
+    <dimen name="flat_delimiter_margin_bottom">10dp</dimen>
+
+  <dimen name="flat_delimiter_layout_height">30dp</dimen>
+  <dimen name="flat_delimiter_text_start_offset">50dp</dimen>
+  <dimen name="flat_delimiter_text_size">13sp</dimen>
+
+  <dimen name="flat_image_border_white_padding">1dp</dimen>
+  <dimen name="flat_image_border_white_stroke_size">2dp</dimen>
+
+  <dimen name="flat_image_border_green_padding">2dp</dimen>
+  <dimen name="flat_image_border_green_stroke_size">1dp</dimen>
+
+
+    <dimen name="flat_text_size">14sp</dimen>
+
+  <dimen name="side_menu_text_size">13sp</dimen>
+
+
+  <dimen name="side_menu_header_shadow_elevator">3dp</dimen>
+
+  <dimen name="side_menu_avatar_size">50dp</dimen>
+  <dimen name="side_menu_avatar_size_radius">8dp</dimen>
+
+
+    <dimen name="flat_payment_list_item_text_size">13sp</dimen>
+    <dimen name="flat_payment_list_item_comment_text_size">10sp</dimen>
+  
+  
+<!--  Settings -->
+  <dimen name="settings_delimiter_height">1dp</dimen>
+  <dimen name="settings_delimiter_margin_top">10dp</dimen>
+  <dimen name="settings_delimiter_margin_bottom">10dp</dimen>
+
+  <!--  Flat -->
+  <dimen name="navigation_bar_height">60dp</dimen>
+  <dimen name="flat_object_list_pager_height">90dp</dimen>
+
+
+<!--  diagram -->
+  <dimen name="credit_diargam_list_pager_height">300dp</dimen>
+
+  <!--Pager tab selector-->
+  <color name="tip_pager_indicator_default_color">#636262</color>
+  <dimen name="tip_pager_indicator_default_thickness">3dp</dimen>
+  <color name="tip_pager_indicator_selected_color">#FFFFFF</color>
+  <dimen name="tip_pager_indicator_selected_thickness">5dp</dimen>
+
+  <dimen name="tip_pager_indicator_inner_radius">0dp</dimen>
+  <dimen name="tip_tab_layout_indicator_height">0dp</dimen>
+  <dimen name="tip_tab_layout_height">20dp</dimen>
+
+</resources>

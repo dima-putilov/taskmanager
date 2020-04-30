@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--  &lt;!&ndash; App &ndash;&gt;-->
+<!--  <color name="grey_clear">#e9e6e6</color>-->
+<!--  <color name="battleshipGrey">#7d7d80</color>-->
+<!--  <color name="battleshipGreyTransp">#907d7d80</color>-->
+<!--  <color name="cerulean">#008fc3</color>-->
+<!--  <color name="cerulean_back">#0091c8</color>-->
+<!--  <color name="cerulean_fade">#cce8f3</color>-->
+<!--  <color name="cerulean_select_inside">#0092cd</color>-->
+<!--  <color name="cerulean_select_outside">#1bb3ed</color>-->
+<!--  <color name="teal_blue">#007fb7</color>-->
+
+<!--  <color name="darkish_blue">@color/bayer_dark_blue_transp</color>-->
+<!--  <color name="darkish_blue_80">#CC044779</color>-->
+<!--  <color name="darkish_blue_60">#99044779</color>-->
+<!--  <color name="wheel_blue">#1067a4</color>-->
+<!--  <color name="ask_blue">#0667a5</color>-->
+<!--  <color name="red">#ce0505</color>-->
+<!--  <color name="product_detail_icon_background">#2C6FA6</color>-->
+
+<!--  &lt;!&ndash; colors V2 &ndash;&gt;-->
+<!--  <color name="fuchsia">#FF3162</color>-->
+<!--  <color name="fuchsia_darker">#FF3162</color>-->
+<!--  <color name="bayer_dark_blue">#10384F</color>-->
+<!--  <color name="bayer_dark_blue_transp">#4C011422</color>-->
+<!--  <color name="bayer_dark_blue_ask">#011422</color>-->
+<!--  <color name="bayer_question">#00617d</color>-->
+
+<!--  &lt;!&ndash; Utils &ndash;&gt;-->
+<!--  <color name="white">#ffffff</color>-->
+<!--  <color name="white_transparent_46">#75ffffff</color>-->
+<!--  <color name="black">#000000</color>-->
+<!--  <color name="black_transparent_46">#75000000</color>-->
+<!--  <color name="black_transparent_56">#8f000000</color>-->
+<!--  <color name="black_transparent_73">#ba000000</color>-->
+<!--  <color name="black_transparent_90">#e6000000</color>-->
+
+<!--  &lt;!&ndash; Material &ndash;&gt;-->
+<!--  <color name="colorPrimary">@color/cerulean</color>-->
+<!--  <color name="colorPrimaryDark">@color/teal_blue</color>-->
+<!--  <color name="colorAccent">@color/fuchsia</color>-->
+
+  <!-- New colors -->
+  <color name="screamingPink">#d30f4b</color>
+  <color name="seaDawn">#00617f</color>
+  <color name="seaStorm">#10384f</color>
+  <color name="grayMorningSky">#f4f4f4</color>
+  <color name="grayBlueSky">#fafafa</color>
+  <color name="grayStoneHand">#b1b1b1</color>
+  <color name="grayLight">#666666</color>
+  <color name="grayDay">#d9d9d9</color>
+  <color name="uranusGreen">#89d329</color>
+  <color name="weather_divider_color">#E9E9E9</color>
+
+
+</resources>

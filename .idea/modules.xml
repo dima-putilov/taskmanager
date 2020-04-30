@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Test.iml" filepath="$PROJECT_DIR$/Test.iml" group="Test" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Test/app" />
+      <module fileurl="file://$PROJECT_DIR$/culculator/culculator.iml" filepath="$PROJECT_DIR$/culculator/culculator.iml" group="Test/culculator" />
+      <module fileurl="file://$PROJECT_DIR$/menu/menu.iml" filepath="$PROJECT_DIR$/menu/menu.iml" group="Test/menu" />
+      <module fileurl="file://$PROJECT_DIR$/menuadv/menuadv.iml" filepath="$PROJECT_DIR$/menuadv/menuadv.iml" group="Test/menuadv" />
+      <module fileurl="file://$PROJECT_DIR$/taskmanager/taskmanager.iml" filepath="$PROJECT_DIR$/taskmanager/taskmanager.iml" group="Test/taskmanager" />
+    </modules>
+  </component>
+</project>

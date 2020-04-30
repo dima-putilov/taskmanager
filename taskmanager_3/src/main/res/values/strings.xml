@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Задачи</string>
+    <string name="toolbar_graphic">График платежей</string>
+    <string name="toolbar_payment">Платеж</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_deleteAll">Удалить все</string>
+    <string name="action_flats">Квартиры</string>
+    <string name="action_goto_credit">Кредиты</string>
+    <string name="action_credit_delete">Удалить кредит</string>
+    <string name="action_credit_add">Добавить кредит</string>
+    <string name="action_credit_addpayment">Ввести платеж по кредиту</string>
+    <string name="action_credit_editcredit">Изменить параметры кредита</string>
+
+    <string name="item_title_date">Дата</string>
+    <string name="item_title_summa">Сумма</string>
+    <string name="title_activity_flat">Квартиры</string>
+    <string name="title_activity_credit">Кредиты</string>
+    <string name="title_activity_task">Задачи</string>
+
+    <string name="graphic_summa_pay">Сумма платежа</string>
+    <string name="graphic_date_beg">Дата начала</string>
+    <string name="graphic_exec">Расчет</string>
+    <string name="graphic_error_summa_pay">Ошибка: не задан ежемесячный платеж</string>
+
+    <string name="graphic_header_date">Дата</string>
+    <string name="graphic_header_rest">Остаток</string>
+    <string name="graphic_header_summa">Платеж</string>
+    <string name="graphic_header_credit">Кредит</string>
+    <string name="graphic_header_procent">Процент</string>
+
+    <string name="action_payment_add">Внести платеж</string>
+    <string name="action_graphic_add">Добавить строку в график платежей</string>
+    <string name="action_payment_deleteAll">Удалить все платежи по кредиту</string>
+
+
+    <string name="credit_item_name">Наименование</string>
+    <string name="credit_item_summa">Сумма кредита</string>
+    <string name="credit_item_summa_pay">Сумма платежа</string>
+    <string name="credit_item_procent">Процент, %</string>
+    <string name="credit_item_perion">Срок, мес.</string>
+    <string name="credit_item_finish">Закрыт</string>
+    <string name="credit_item_date">Дата</string>
+    <string name="credit_item_date_pay">Очередной платеж</string>
+    <string name="credit_item_rest">Остаток</string>
+
+    <string name="credit_item_button_add">Записать</string>
+    <string name="credit_item_button_cancel">Отмена</string>
+
+    <string name="credit_item_error_summa">Ошибка: Не задана сумма кредита!</string>
+    <string name="credit_item_error_summa_pay">Ошибка: Не задана сумма платежа!</string>
+    <string name="credit_item_error_procent">Ошибка: Не задан процент кредита!</string>
+    <string name="credit_item_error_period">Ошибка: Не задан период кредита!</string>
+
+    <string name="credit_payment_date">Дата платежа</string>
+    <string name="credit_payment_summa">Сумма платежа</string>
+    <string name="credit_payment_summa_credit">в т.ч. кредит</string>
+    <string name="credit_payment_summa_procent">процент</string>
+    <string name="credit_payment_summa_addon">Досрочное погашение</string>
+    <string name="credit_payment_summa_plus">Прoчие доходы</string>
+    <string name="credit_payment_summa_minus">Прочие расходы</string>
+
+</resources>

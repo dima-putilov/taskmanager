@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item>
+<!--    <rotate-->
+<!--        android:fromDegrees="45"-->
+<!--        android:toDegrees="45"-->
+<!--        android:pivotX="-40%"-->
+<!--        android:pivotY="87%"-->
+<!--        >-->
+      <shape
+          android:shape="rectangle" >
+<!--          <size-->
+<!--              android:width="200dp"-->
+<!--              android:height="70dp" />-->
+<!--        <stroke android:color="@color/transparent" android:width="10dp"/>-->
+        <solid
+            android:color="@color/FlatItemWindowsBar" />
+
+        <gradient android:angle="-90"
+            android:type="linear"
+            android:startColor="@color/FlatItemWindowsBar"
+            android:centerColor="@color/FlatItemToolbarLight"
+            android:endColor="@color/color_background_white"
+            />
+      </shape>
+<!--    </rotate>-->
+  </item>
+</layer-list>
+
+<!--<rotate xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:pivotX="50"-->
+<!--    android:pivotY="50"-->
+<!--    android:fromDegrees="0"-->
+<!--    android:toDegrees="50" >-->
+
+<!--  <shape-->
+<!--      android:shape="rectangle">-->
+<!--    <size-->
+<!--        android:width="200dp"-->
+<!--        android:height="70dp"-->
+<!--        />-->
+<!--    <gradient android:angle="-45"-->
+<!--        android:type="linear"-->
+<!--        android:startColor="@color/FlatItemWindowsBar"-->
+<!--        android:centerColor="@color/FlatItemToolbarLight"-->
+<!--        android:endColor="@color/color_background_white"-->
+<!--        />-->
+<!--&lt;!&ndash;    <solid android:color="@color/FlatItemWindowsBar" />&ndash;&gt;-->
+<!--  </shape>-->
+<!--</rotate>-->

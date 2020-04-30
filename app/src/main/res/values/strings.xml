@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task manager</string>
+    <string name="edit_message">Введите текст</string>
+    <string name="send_message">Старт!</string>
+</resources>

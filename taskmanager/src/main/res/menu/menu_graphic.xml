@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_OK"
+        android:title="OK"
+        android:icon="@drawable/img_checkmark"
+        yourapp:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/remove"
+        android:icon="@drawable/delete_item"
+        yourapp:showAsAction="always" />
+
+
+
+
+
+    <item
+        android:title="sub"
+        android:icon="@drawable/submenu"
+        yourapp:showAsAction="always">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+            <item
+                android:id="@+id/toolbar_payment_add"
+                android:title="@string/action_payment_add"
+                android:icon="@drawable/icon_toolbar_checked"
+                yourapp:showAsAction="always" />
+
+
+            <item
+                android:id="@+id/toolbar_graphic_add"
+                android:title="@string/action_graphic_add"
+                android:icon="@drawable/plus"
+                yourapp:showAsAction="always" />
+
+            <item
+                android:id="@+id/toolbar_payment_add_all"
+                android:title="@string/action_add_all"
+                android:icon="@drawable/add_all"
+                yourapp:showAsAction="always" />
+
+        <item
+            android:id="@+id/toolbar_delete_all"
+            android:title= "@string/action_delete_all_payments"
+            android:icon="@drawable/delete"
+            yourapp:showAsAction="always" />
+        </menu>
+
+
+    </item>
+
+
+</menu>

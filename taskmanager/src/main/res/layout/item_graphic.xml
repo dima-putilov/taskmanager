@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llGraphic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="left|top"
+            android:gravity="left|top"
+            android:src="@drawable/check"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvGrDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:text=""
+            android:minWidth="5dp"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tvRest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="1dp"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvSumma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="1dp"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tvSumma_procent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:padding="1dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tvSumma_credit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="1dp"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_weight="1"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

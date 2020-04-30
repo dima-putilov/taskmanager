@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <include layout="@layout/toolbar" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.PagerTabStrip
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+
+                android:background="#d2e5ec"
+                android:textColor="#031023"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+        </android.support.v4.view.ViewPager>
+
+   </LinearLayout>
+
+
+    <!-- Layout to contain a menu appearing above the main view -->
+    <LinearLayout
+        android:id="@+id/sideMenuLayout"
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginStart="-64dp"
+        android:background="@color/side_menu_background"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/sideMenuFragment"
+            class="com.example.dmstaskmanager.sideMenu.SideMenuFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

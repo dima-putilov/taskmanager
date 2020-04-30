@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.example.dmstaskmanager.view.StrokeTextView
+            android:id="@+id/dlLic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flat_delimiter_layout_height"
+            android:layout_weight="1"
+            app:text="@string/title_flat_lic"
+            app:textColor="@color/color_stroke_delimiter_text"
+            app:lineColor="@color/flat_item_delimiter_background"
+            app:textOffset="@dimen/flat_delimiter_text_start_offset"
+            app:textSize="@dimen/flat_delimiter_text_size"
+
+            android:layout_marginTop="@dimen/flat_delimiter_margin_top"
+            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+<!--        -->
+<!--        <include layout="@layout/flat_delimiter"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="@dimen/flat_delimiter_height"-->
+<!--            />-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/clLic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dlLic">
+
+            <TextView
+                android:id="@+id/tvLic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/flat_settings_margin_start"
+                android:text="@string/title_flat_lic"
+                android:textColor="@color/colorLabel"
+                app:layout_constraintBaseline_toBaselineOf="@+id/etLic"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/etLic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/flat_settings_margin_end"
+                android:ems="10"
+                android:hint="@string/title_flat_lic"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvLic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+<!--        <include layout="@layout/flat_delimiter"-->
+<!--            android:id="@+id/dlLic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/flat_delimiter_height"-->
+<!--            android:layout_marginTop="@dimen/flat_delimiter_margin_top"-->
+<!--            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/clLic"-->
+<!--            />-->
+
+        <com.example.dmstaskmanager.view.StrokeTextView
+            android:id="@+id/dlKv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flat_delimiter_layout_height"
+            android:layout_weight="1"
+            app:text="Квартплата"
+            app:textColor="@color/color_stroke_delimiter_text"
+            app:lineColor="@color/flat_item_delimiter_background"
+            app:textOffset="@dimen/flat_delimiter_text_start_offset"
+            app:textSize="@dimen/flat_delimiter_text_size"
+
+            android:layout_marginTop="@dimen/flat_delimiter_margin_top"
+            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"
+            app:layout_constraintTop_toBottomOf="@+id/clLic"
+
+            />
+
+        <Switch
+            android:id="@+id/cbIsPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/flat_settings_margin_start"
+            android:layout_marginEnd="@dimen/flat_settings_margin_end"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text="@string/title_flat_pay"
+            android:textSize="@dimen/flat_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dlKv" />
+
+        <com.example.dmstaskmanager.view.StrokeTextView
+            android:id="@+id/dlIsPay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flat_delimiter_layout_height"
+            android:layout_weight="1"
+            app:text="Счетчики"
+            app:textColor="@color/color_stroke_delimiter_text"
+            app:lineColor="@color/flat_item_delimiter_background"
+            app:textOffset="@dimen/flat_delimiter_text_start_offset"
+            app:textSize="@dimen/flat_delimiter_text_size"
+
+            android:layout_marginTop="@dimen/flat_delimiter_margin_top"
+            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"
+            app:layout_constraintTop_toBottomOf="@+id/cbIsPay"
+
+            />
+
+
+
+        <Switch
+            android:id="@+id/cbIsCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/flat_settings_margin_start"
+            android:layout_marginEnd="@dimen/flat_settings_margin_end"
+            android:ems="10"
+            android:text="@string/title_flat_counter"
+            android:textSize="@dimen/flat_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dlIsPay" />
+
+        <LinearLayout
+            android:id="@+id/ltCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/flat_settings_margin_start"
+            android:layout_marginEnd="@dimen/flat_settings_margin_end"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/cbIsCounter"
+            app:layout_constraintStart_toStartOf="@+id/cbIsCounter"
+            android:animateLayoutChanges="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_flat_day_beg"
+                android:textColor="@color/colorLabel"
+
+                 />
+
+            <EditText
+                android:id="@+id/etDayBeg"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="@string/title_flat_day_beg"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/title_flat_day_end"
+                android:textColor="@color/colorLabel"
+            />
+
+            <EditText
+                android:id="@+id/etDayEnd"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/title_flat_day_end"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+            />
+
+        </LinearLayout>
+
+        <com.example.dmstaskmanager.view.StrokeTextView
+            android:id="@+id/dlCounter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flat_delimiter_layout_height"
+            android:layout_weight="1"
+            app:text="Аренда"
+            app:textColor="@color/color_stroke_delimiter_text"
+            app:lineColor="@color/flat_item_delimiter_background"
+            app:textOffset="@dimen/flat_delimiter_text_start_offset"
+            app:textSize="@dimen/flat_delimiter_text_size"
+
+            android:layout_marginTop="@dimen/flat_delimiter_margin_top"
+            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"
+            app:layout_constraintTop_toBottomOf="@+id/ltCounter"
+
+            />
+        
+        <Switch
+            android:id="@+id/cbIsArenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/flat_settings_margin_start"
+            android:layout_marginEnd="@dimen/flat_settings_margin_end"
+            android:ems="10"
+            android:text="@string/title_flat_arenda"
+            android:textSize="@dimen/flat_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dlCounter" />
+
+        <LinearLayout
+            android:id="@+id/ltArenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/flat_settings_margin_start"
+            android:layout_marginEnd="@dimen/flat_settings_margin_end"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/cbIsArenda"
+            app:layout_constraintStart_toStartOf="@+id/cbIsArenda"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_flat_day_arenda"
+                android:textColor="@color/colorLabel"
+                />
+
+            <EditText
+                android:id="@+id/etDayArenda"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:hint="@string/title_flat_day_arenda_hint"
+                android:inputType="numberDecimal"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_flat_day_arenda2"
+                    android:textColor="@color/colorLabel"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSummaArenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_flat_summa_arenda"
+                    android:textColor="@color/colorLabel"
+                    />
+
+                <EditText
+                    android:id="@+id/etSummaArenda"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:gravity="end"
+                    android:hint="@string/title_flat_summa_arenda"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/flat_delimiter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/flat_delimiter_height"
+            android:layout_marginTop="@dimen/flat_delimiter_margin_top"
+            android:layout_marginBottom="@dimen/flat_delimiter_margin_bottom"
+            app:layout_constraintTop_toBottomOf="@+id/ltArenda"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

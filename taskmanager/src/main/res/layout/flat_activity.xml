@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_white"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:actionBarSize"
+        android:layout_marginBottom="@dimen/navigation_bar_height"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_delimiter_height"
+            android:background="@color/settings_item_delimiter_background">
+        </View>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/objectListPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flat_object_list_pager_height"
+            android:background="@color/FlatItemWindowsBar"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/flatPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <!--        <android.support.design.widget.TabLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <include layout="@layout/toolbar_item" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_bar_height"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:theme="@style/BottomNavigationTheme"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</android.support.design.widget.CoordinatorLayout>

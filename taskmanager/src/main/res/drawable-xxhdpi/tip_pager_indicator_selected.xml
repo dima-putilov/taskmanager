@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="@dimen/tip_pager_indicator_inner_radius"
+    android:shape="ring"
+    android:thickness="@dimen/tip_pager_indicator_selected_thickness"
+    android:useLevel="false">
+    <solid android:color="@color/tip_pager_indicator_selected_color"/>
+</shape>

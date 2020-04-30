@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llFlatPay"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tvFPDate"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="@dimen/flat_payment_list_item_text_size"
+        android:gravity="start|center"
+        android:textColor="@color/flat_payment_text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/tvFPOper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="start|center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="@dimen/flat_payment_list_item_text_size"
+            android:textColor="@color/flat_payment_text_color"
+
+            app:layout_constraintStart_toEndOf="@+id/tvFPDate"
+            app:layout_constraintEnd_toStartOf="@+id/tvSumma"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvFPDate"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="start|top"
+            android:textSize="@dimen/flat_payment_list_item_comment_text_size"
+            android:textColor="@color/flat_payment_comment_text_color"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+
+            app:layout_constraintStart_toEndOf="@+id/tvFPDate"
+            app:layout_constraintEnd_toStartOf="@+id/tvSumma"
+            app:layout_constraintTop_toBottomOf="@id/tvFPOper"
+            >
+        </TextView>
+
+    <TextView
+        android:id="@+id/tvSumma"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:text=""
+        android:layout_marginEnd="15dp"
+        android:textSize="@dimen/flat_payment_list_item_text_size"
+        android:gravity="end|center"
+        android:textColor="@color/flat_payment_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvFPDate"
+        >
+    </TextView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/settings_delimiter_height"
+    android:layout_marginTop="@dimen/settings_delimiter_margin_top"
+    android:layout_marginBottom="@dimen/settings_delimiter_margin_bottom"
+    android:background="@color/settings_item_delimiter_background">
+</View>

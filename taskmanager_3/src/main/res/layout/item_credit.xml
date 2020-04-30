@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/item_main"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#061a2b"
+            android:textSize="18sp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tvParam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="left|center"
+            android:color="#061a2b"
+            android:textSize="10sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                >
+ <!--               <TextView
+                    android:id="@+id/tvTtileDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/credit_item_date_pay"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="left|center"
+                    android:color="#ede2e2"
+                    android:textSize="10sp">
+                </TextView>
+-->
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text=""
+                    android:textColor="#d63301"
+                    android:textSize="12sp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tvSummaPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text=""
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                >
+
+                <TextView
+                    android:id="@+id/tvSummaRest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center|top"
+                    android:text=""
+                    android:textColor="#051297"
+                    android:textStyle="bold"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvSummaFinRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:text=""
+                    android:gravity="right|center"
+                    android:textStyle="bold"
+                    android:textColor="#d63301"
+                    android:textSize="10sp">
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/progress_bar"
+            >
+
+            <ProgressBar
+                android:id="@+id/pbProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY="8"
+                android:padding="5dp"
+                android:max="100">
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/tvInProgressSumma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:layout_alignTop="@id/pbProgress"
+                android:layout_alignLeft="@id/pbProgress"
+                android:layout_alignRight="@id/pbProgress"
+                android:layout_alignBottom="@id/pbProgress"
+                android:background="@android:color/transparent"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvInProgressSumma_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center|center"
+                android:gravity="center|center"
+                android:layout_alignRight="@id/pbProgress"
+                android:layout_alignTop="@id/pbProgress"
+                android:layout_alignLeft="@id/pbProgress"
+                android:layout_alignBottom="@id/pbProgress"
+                android:background="@android:color/transparent"
+                >
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

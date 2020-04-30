@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#5bb9e2</color>
+    <color name="colorLabel">#0c2570</color>
+    <color name="color_done">#bdf1caad</color>
+    <color name="color_other">#FFFFFF</color>
+
+    <!-- Side menu -->
+    <color name="side_menu_color_text">#b94e11</color>
+    <color name="side_menu_color_text_shadow">#6A692E0B</color>
+    <color name="side_menu_header_background_color">#A9EEE7</color>
+    <color name="side_menu_background">#FFFFFF</color>
+    <color name="side_menu_text">#000000</color>
+    <color name="side_menu_group_count_text_background_color">#707070</color>
+    <color name="side_menu_group_count_text_color">#FFFFFF</color>
+
+    <color name="color_text_new">#4283c9</color>
+    <color name="color_text_default">#2b2b2b</color>
+    <color name="color_text">#000000</color>
+
+    <color name="color_text_white">#FFFFFF</color>
+
+    <color name="color_background_white">#FFFFFF</color>
+
+
+    <color name="color_current_pay">#e3fd5900</color>
+
+    <color name="color_credit_close">#b7ff0026</color>
+
+    <color name="color_flat_close">#303F9F</color>
+
+    <!-- Диаграмма -->
+    <color name="CreditDiagramToolbar">#285b91</color>
+    <color name="CreditDiagramWindowsBar">#285b91</color>
+
+    <color name="diagram_background_color">#285b91</color>
+    <color name="diagram_background_second_color">#6F9AC8</color>
+    <color name="diagram_coordinates_line_color">#000000</color>
+    <color name="diagram_coordinates_added_lines_color">#89A1BC</color>
+    <color name="diagram_coordinates_text_main_color">#FFFFFF</color>
+    <color name="diagram_coordinates_text_second_color">#4283c9</color>
+    <color name="diagram_line_color">#FFFFFF</color>
+    <color name="diagram_line_color_future">#9A9A9A</color>
+    <color name="diagram_line_color_2">#b7ff0026</color>
+
+    <color name="diagram_table_rest_text_color">#b7ff0026</color>
+    <color name="diagram_table_text_color">#FFFFFF</color>
+    <color name="diagram_table_text_lavel_color">#9FFFFFFF</color>
+    <color name="diagram_table_line_color">#B6FFFFFF</color>
+
+
+
+    <!--> Квартиры Тема: Квартиры <-->
+    <color name="FlatItemToolbar">#1e7831</color>
+    <color name="FlatItemToolbarLight">#44AF5A</color>
+    <color name="FlatItemWindowsBar">#1e7831</color>
+
+    <color name="flat_payment_text_color">#000000</color>
+    <color name="flat_payment_comment_text_color">#383838</color>
+
+    <!--> Квартиры Тема: Кредиты<-->
+    <color name="CreditItemToolbar">#4283c9</color>
+    <color name="CreditItemWindowsBar">#285b91</color>
+
+    <color name="separator_color">#D8D8D8</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+      <!--> Квартиры Тема: Задачи <-->
+    <color name="TaskItemToolbar">#35cac3</color>
+    <color name="TaskItemWindowsBar">#1c8c87</color>
+
+      <!--> Квартиры Тема: Платежи <-->
+    <color name="PaymentItemToolbar">#fc8e4f</color>
+    <color name="PaymentItemWindowsBar">#b94e11</color>
+
+    <color name="graphic_parameters_background_color">#686767</color>
+    <color name="graphic_parameters_color">#ffffff</color>
+    <color name="graphic_parameters_fact_color">#a5e4e1</color>
+
+    <color name="flat_item_delimiter_background">#D1D1D1</color>
+    <color name="flat_foto_background">#00E6E6E6</color>
+
+  <color name="settings_item_delimiter_background">#D1D1D1</color>
+
+  <!--> Квартиры Тема: Настройки <-->
+  <color name="SettingsItemToolbar">#897AB6</color>
+  <color name="SettingsItemWindowsBar">#413760</color>
+
+
+    <color name="color_stroke_delimiter_text">#1e7831</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dmstaskmanager.maintask">
+    <item
+        android:id="@+id/action_payment_add"
+        android:orderInCategory="100"
+        android:title="@string/action_payment_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_graphic_add"
+        android:orderInCategory="100"
+        android:title="@string/action_graphic_add"
+        app:showAsAction="never" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#7b7b7b"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <item
+        android:id="@+id/action_payment_deleteAll"
+        android:orderInCategory="400"
+        android:title="@string/action_payment_deleteAll"
+        app:showAsAction="never" />
+</menu>
