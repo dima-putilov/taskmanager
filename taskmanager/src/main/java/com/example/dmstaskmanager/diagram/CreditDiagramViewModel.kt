@@ -24,7 +24,8 @@ class CreditDiagramViewModel(application: Application): AndroidViewModel(applica
     var getGraphicUseCase =  GetGraphicUseCase()
 
     var diagramItemList = MutableLiveData<List<DiagramItem>>()
-    var currentCredit = SingleLiveEvent<Credit>()
+
+    var currentDiagramItem = MutableLiveData<DiagramItem>()
 
     var setCurrentPage= SingleLiveEvent<Int>()
 
@@ -47,7 +48,7 @@ class CreditDiagramViewModel(application: Application): AndroidViewModel(applica
         diagramItemList.value = listData
 
         if (listData.isNotEmpty()) {
-            currentCredit.value = listData[0].creditTotals?.credit
+            currentDiagramItem.value = listData[0]
         }
     }
 
@@ -114,7 +115,8 @@ class CreditDiagramViewModel(application: Application): AndroidViewModel(applica
     fun onChangePage(position: Int){
         getGraphicListData()?.also{
             if (it.size > position) {
-                currentCredit.value = it[position].creditTotals?.credit
+                //currentCredit.value = it[position].creditTotals?.credit
+                currentDiagramItem.value = it[position]
             }
         }
     }

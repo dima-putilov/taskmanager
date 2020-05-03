@@ -1,13 +1,10 @@
 package com.example.dmstaskmanager.diagram
 
 import android.support.v4.app.Fragment
-import android.app.Activity
 import android.arch.lifecycle.ViewModelProviders
 import android.arch.lifecycle.Observer
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.view.ViewPager.OnPageChangeListener
-import android.text.format.DateUtils
 import android.util.Log
 import android.view.*
 import com.example.dmstaskmanager.R
@@ -16,6 +13,7 @@ import com.example.dmstaskmanager.utils.*
 import android.view.MenuItem
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.credit_diagram_fragment.*
+import kotlinx.android.synthetic.main.credit_diagram_graphic_fragment.*
 import kotlin.math.abs
 
 class CreditDiagramFragment : Fragment() {
@@ -71,9 +69,9 @@ class CreditDiagramFragment : Fragment() {
             }
         })
 
-        viewModel.currentCredit.observe(this, Observer { currentCredit ->
-            currentCredit?.also {
-                setCreditHeader(it)
+        viewModel.currentDiagramItem.observe(this, Observer { currentDiagramItem ->
+            currentDiagramItem?.also {
+                updateUI(it)
             }
         })
 
@@ -119,13 +117,13 @@ class CreditDiagramFragment : Fragment() {
         diagramPager.addOnPageChangeListener(object : OnPageChangeListener {
 
             override fun onPageSelected(position: Int) {
-                viewModel.onChangePage(position)
+//                viewModel.onChangePage(position)
 
-                activity.supportFragmentManager.fragments.forEach {
-                    if (it is DiagramItemFragment) {
-                        it.updateUI()
-                    }
-                }
+//                activity.supportFragmentManager.fragments.forEach {
+//                    if (it is DiagramItemFragment) {
+//                        it.updateUI()
+//                    }
+//                }
             }
 
             override fun onPageScrolled(position: Int, positionOffset: Float,
@@ -139,7 +137,7 @@ class CreditDiagramFragment : Fragment() {
 
                 if (currentPosition != newPosition) {
                     currentPosition = newPosition
-                    //viewModel.setCurrentDevice(currentPosition)
+                    viewModel.onChangePage(currentPosition)
                 }
 
                 val alpha = abs(1 - positionOffset / 0.5).toFloat()
@@ -164,35 +162,48 @@ class CreditDiagramFragment : Fragment() {
     }
 
     private fun setListeners(){
+        creditDiagramMainLayout.setOnTouchListener { v, event ->
+            Log.d("SCROLL", "MAIN event = $event")
+            creditDiagramScrollView.onTouchEvent(event)
+            diagramPager.onTouchEvent(event)
+        }
 
     }
 
-    private fun setCreditHeader(credit : Credit?) {
-        credit?.also {credit ->
-            val name = credit.name +
-                if (credit.date > 0 ) {
-                    " от " + DateUtils.formatDateTime(activity,
-                        credit.date, DateUtils.FORMAT_SHOW_DATE or DateUtils.FORMAT_SHOW_YEAR)
-                } else {
-                    ""
-                }
-
-            val param = "Сумма: " + String.format("%.0f", credit.summa) +
-                if (credit.procent > 0) {
-                    ", Процент: " + String.format("%.2f%%", credit.procent) + ", Срок: " + credit.period.toString()
-                } else {
-                    ""
-                } +
-                if (credit.period > 0) {
-                    ", Срок: " + credit.period.toString()
-                } else {
-                    ""
-                }
-
-            tvName.text = name
-            tvParam.text = param
+    fun updateUI(diagramItem: DiagramItem?) {
+        diagramItem?.also {
+            circleDiagramView.setDiagramData(it)
+            creditParamsView.setDiagramData(it)
+            diagramView.setDiagramData(it)
         }
     }
+
+//    private fun setCreditHeader(credit : Credit?) {
+//        credit?.also {credit ->
+//            val name = credit.name +
+//                if (credit.date > 0 ) {
+//                    " от " + DateUtils.formatDateTime(activity,
+//                        credit.date, DateUtils.FORMAT_SHOW_DATE or DateUtils.FORMAT_SHOW_YEAR)
+//                } else {
+//                    ""
+//                }
+//
+//            val param = "Сумма: " + String.format("%.0f", credit.summa) +
+//                if (credit.procent > 0) {
+//                    ", Процент: " + String.format("%.2f%%", credit.procent) + ", Срок: " + credit.period.toString()
+//                } else {
+//                    ""
+//                } +
+//                if (credit.period > 0) {
+//                    ", Срок: " + credit.period.toString()
+//                } else {
+//                    ""
+//                }
+//
+//            tvName.text = name
+//            tvParam.text = param
+//        }
+//    }
 
     private fun showGraphicLoadingIndicator(){
         diagramPager.visibility = View.INVISIBLE

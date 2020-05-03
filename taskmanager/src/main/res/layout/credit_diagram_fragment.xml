@@ -7,87 +7,54 @@
     android:background="@drawable/diagram_background"
     >
 
-    <LinearLayout
-        android:id="@+id/tvNameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp"
-        android:orientation="vertical"
-        >
+      <include layout="@layout/credit_diagram_graphic_fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="70dp"
+          android:layout_marginBottom="60dp"/>
 
-        <TextView
-            android:id="@+id/tvName"
+      <RelativeLayout
+          android:id="@+id/creditTabLayout"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_alignParentBottom="true"
+          android:background="@color/transparent"
+          >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/creditTabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/color_text_white"
-            android:textStyle="bold|italic"
-            android:textSize="16sp"
-            android:text="@string/credit_item_name" />
+            android:layout_height="@dimen/tip_tab_layout_height"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            app:tabSelectedTextColor="@color/transparent"
+            app:tabBackground="@drawable/tip_pager_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            />
 
-        <TextView
-            android:id="@+id/tvParam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/diagram_table_text_lavel_color"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:text="" />
+      </RelativeLayout>
 
-    </LinearLayout>
+      <android.support.v4.view.ViewPager
+          android:id="@+id/diagramPager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/transparent"
+          >
+      </android.support.v4.view.ViewPager>
 
-    <RelativeLayout
-        android:id="@+id/pageLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tvNameLayout"
-        android:layout_above="@+id/creditTabLayout"
-        android:background="@color/transparent"
-        >
+      <ProgressBar
+          android:id="@+id/graphicProgressBar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:progressTint="@color/colorLabel"
+          android:visibility="gone">
+      </ProgressBar>
 
-          <android.support.v4.view.ViewPager
-              android:id="@+id/diagramPager"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              >
-
-          </android.support.v4.view.ViewPager>
-
-          <ProgressBar
-              android:id="@+id/graphicProgressBar"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_centerInParent="true"
-              android:progressTint="@color/colorLabel"
-              android:visibility="gone">
-          </ProgressBar>
-
-    </RelativeLayout>
-
-  <RelativeLayout
-      android:id="@+id/creditTabLayout"
-      android:layout_width="match_parent"
-      android:layout_height="60dp"
-      android:layout_alignParentBottom="true"
-    >
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/creditTabs"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/tip_tab_layout_height"
-        android:layout_centerInParent="true"
-        android:background="@color/transparent"
-        app:tabSelectedTextColor="@color/transparent"
-        app:tabBackground="@drawable/tip_pager_selector"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        />
-
-  </RelativeLayout>
-
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/creditDiagramMainLayout"
+            />
 </RelativeLayout>

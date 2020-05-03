@@ -1,62 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparent"
+    android:orientation="vertical"
 >
 
   <LinearLayout
-      android:id="@+id/diagramsLayout"
+      android:id="@+id/tvNameLayout"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="15dp"
       android:orientation="vertical"
       >
 
-    <com.example.dmstaskmanager.view.CircleDiagramView
-        android:id="@+id/circleDiagramView"
+    <TextView
+        android:id="@+id/tvName"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_weight="1"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="50dp"
-        app:text="@string/title_flat_name"
-        app:textColor="@color/color_stroke_delimiter_text"
-        app:lineColor="@color/color_text_white"
-        app:textSize="14sp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/color_text_white"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:text="@string/credit_item_name" />
 
-    <com.example.dmstaskmanager.view.CreditTableView
-        android:id="@+id/creditParamsView"
+    <TextView
+        android:id="@+id/tvParam"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_weight="1"
-        android:layout_centerInParent="true"
-        android:layout_margin="20dp"
-        app:text="@string/title_flat_name"
-        app:textColor="@color/diagram_table_text_color"
-        app:lineColor="@color/diagram_table_line_color"
-        app:textSize="20sp"
-        />
-
-    <com.example.dmstaskmanager.view.DiagramView
-        android:id="@+id/diagramView"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_weight="1"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
-        app:text="@string/title_flat_name"
-        app:textColor="@color/color_stroke_delimiter_text"
-        app:lineColor="@color/color_text_white"
-        app:textSize="14sp"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/diagram_table_text_lavel_color"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:text="" />
 
   </LinearLayout>
-</ScrollView>
+
+</LinearLayout>
